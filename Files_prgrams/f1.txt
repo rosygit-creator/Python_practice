@@ -1,0 +1,2 @@
+rosy1,p1
+rosy2,p2
