@@ -13,6 +13,7 @@ def sub_string(input):
 
     return 1
 
+# count of substring in a string
 def count_f(input):
     # index=0
     sub_s="rosy"
@@ -31,6 +32,7 @@ ans=count_f(s)
 
 print(ans)
 
+# find all substrings of a string
 def print_sub(s):
     l=[]
     for i in range(0,len(s)):
