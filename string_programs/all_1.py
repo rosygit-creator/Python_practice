@@ -22,6 +22,7 @@ def count_1_substring(input):
             # if is_all_1(input[i:j]):
             #     count+=1
 
+
             if all(c=='1' for c in temp):
                 count += 1
 

@@ -50,12 +50,12 @@ def longest_common(input, part):
 
 
 def remove_all(input,part):
-    start=0
+
     index=input.find(part)
 
     while index!= -1:
         input=input.replace(part, '')
-        index = input.find(part)
+        index = input.find(part, index+1)
 
 
     return input

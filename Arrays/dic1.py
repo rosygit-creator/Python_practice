@@ -28,13 +28,13 @@
 # print(ans)
 
 
-def test_s(s):
+def f_s(s):
     print("inside")
-    l1=[]
+    l1={}
     for c in s:
-        l1.append([c,s.count(c)])
+        l1[c]=s.count(c)
     # print(l)
     return l1
 
-l=test_s("hhello")
+l=f_s("hhello")
 print(l)
