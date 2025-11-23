@@ -38,10 +38,11 @@ def count_longest_substring1(s):
         else:
             max_l=max(count, max_l)
             count=1
+        # print(f" {s[i]}, {count}" )
 
     return max_l
 
-s = "aaabbbcccccdd"
+s = "aaabbbcccccbbddcc"
 ans=count_longest_substring1(s)
 
-print(ans)
+print(ans) # c , 5

@@ -1,18 +1,26 @@
 
 
-# count of longest substring in a string with repeating characters-2 loops
-def program1(input, c):
-    # index=0
 
-    count = 0
-    # print(input.count(c))
-    for i in range(0, len(input)):
-        if c==input[i]:
-            count+=1
+def min_distance(input):
+    left=0;
+    right=len(input)-1
+    k=-1
 
-    return count
+    while(left<right):
+        if input[left]==input(right) and k==-1:
+            k=left
+        else:
+            if input[left]==input(right) and k>-1:
 
-s = "aaabbbbefbb"
-ans=program1(s, "a")
+
+
+        left+=1
+        right-=1
+
+
+
+
+    return
+nums=[1,2,1,1,3]
+ans=min_distance(nums)
 print(ans)
-
