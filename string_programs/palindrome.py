@@ -20,7 +20,7 @@ def palindrome(input):
 
 
 
-arr = "mam"
+arr = "ma"
 res = palindrome(arr)
 print(res)
 

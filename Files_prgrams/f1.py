@@ -1,4 +1,5 @@
 import requests
+import pytest
 
 credentials={}
 
@@ -26,11 +27,11 @@ def test_post_request():
     data={"name": "a1", "age":21}
     url="abc"
     for key, value in credential1.items():
-        response=requests.post(url,data, auth={key,value})
+        response=requests.post(url,data, auth={ key,value })
         assert response.status_code==200
 
 
-# use csv to dircetly read data using @pytest.mark.parameterize decorator
+# use csv to directly read data using @pytest.mark.parameterize decorator
 #https://masteringbackend.com/posts/parameterized-testing-with-pytest-and-selenium
 
 # Import csv
