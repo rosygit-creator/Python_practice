@@ -11,6 +11,7 @@ def top_k_frequency(arr, k):
     pq = []
 
     output=[0] * len(pq)
+    index=len(pq)-1
     map={}
     # dict will store list elements with freq
     for e in arr:
@@ -27,19 +28,20 @@ def top_k_frequency(arr, k):
             heapq.heappop(pq)
 
     while pq:
-        output=heapq.heappop(pq)[1]
-        # for val in output:
-        # print(f"{output}")
-        # print(f"{output[0]}")
-        break
+        output[index]=heapq.heappop(pq)[1]
+        index-=1
+    for val in output:
+            # print(f"{output}")
+        print({val})
 
 
 
 
-    return output
+
+    return -1
 
 # arr = [10, 20, 30, 60, 30, 60, 10] for this input best solution is hashmap/dict
-arr=[40, 40,70, 90, 30, 50, 60, 10]
+arr=[1,1,1,2,2,3]
 res = top_k_frequency(arr, 2)
 print(res)
 
