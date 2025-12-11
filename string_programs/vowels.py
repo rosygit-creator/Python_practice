@@ -15,7 +15,7 @@ def count_vowel(input):
 
     for i in range(0, len(input)):
         for j in range(i+1, len(input)+1):
-            # print(input[i:j])
+            print(input[i:j])
     # print(sub_string)
 
             count_v=is_Vowel(input[i:j])
@@ -30,7 +30,7 @@ def is_Vowel(s1):
     vowel="aeiouAEIOU"
 
     for c in s1:
-        if vowel.find(c) > -1:
+        if vowel.find(c) > -1: # increase count for each vowel letter in s1
             count+=1
 
     return count

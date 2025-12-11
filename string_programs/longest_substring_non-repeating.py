@@ -28,12 +28,12 @@ s = "aaabbbbefbb"
 
 # print(ans)
 
-#count of longest substring in a string with repeating characters-1 loop
+#count of longest substring in a string with non repeating characters-1 loop
 def count_longest_substring1(s):
     max_l = 1
     output=""
     for i in range(0, len(s)):
-        if output.find(s[i])==-1:
+        if output.find(s[i])==-1: # or use :  if s[i] not in output:
             output=output+s[i]
             # print(f"output {output}")
         else:

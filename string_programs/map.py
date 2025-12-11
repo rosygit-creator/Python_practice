@@ -1,5 +1,6 @@
 
-# 3sum
+#input:aaabeeeedfg
+#output:a3b1e4d1f1g1
 
 
 def countchar(input):

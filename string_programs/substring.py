@@ -14,6 +14,8 @@ def sub_string(input):
     return 1
 
 # count of substring in a string
+#easy way --- input.count(sub_s)
+
 def count_f(input):
     # index=0
     sub_s="rosy"

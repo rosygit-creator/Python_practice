@@ -37,7 +37,7 @@ def longest_common(input, part):
         index=input.find(part[i], index)
         if index > -1:
             count+=1
-        else:
+        else:  # else is not required
             pass
         # print(f"count {count} for {part[i]}")
         index=index+1
@@ -63,7 +63,7 @@ def remove_all(input,part):
 
 #1
 ans=find_all_occurrence("AABAACAADAABAABA","AABA")
-print(ans)
+print("all occuremce", ans)
 
 #2 https://www.geeksforgeeks.org/dsa/given-two-strings-find-first-string-subsequence-second/
 # ans=longest_common("abcde","ace")  #3 for ace

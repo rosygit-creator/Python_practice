@@ -8,7 +8,7 @@ def continuous_array(a):
     for i in range(0, len(a)):
 
         for j in range(i+1,len(a)):
-            temp=a[i:j+1]
+            temp=a[i:j+1] # since j+1 it will print min list of length 2
             # print(temp)
             if temp.count(0)==temp.count(1):
                 # l=j-i+1
