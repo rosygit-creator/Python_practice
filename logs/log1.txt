@@ -1,0 +1,7 @@
+log 2 file
+errors
+warnings
+
+error1
+error2
+
