@@ -21,7 +21,7 @@ def top_k_frequency(arr, k):
 
 
     for key, value in map.items():
-        heapq.heappush(pq, [value,key]) #  storing in value, key so that most frequency elemnets are stored
+        heapq.heappush(pq, [value, key]) #  storing in value, key so that most frequency elemnets are stored
 
         #if heap size >k pop
         if len(pq) > k:

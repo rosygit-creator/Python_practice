@@ -6,12 +6,12 @@ credentials={}
 def get_credential():
     with open("f1.txt",'r') as f:
         for line in f:
-            print(f"line is",line)
+            print("line is",line)
             key,value=line.split(",")
             credentials[key]=value
         for key, value in credentials.items():
-            print(f"key is", key)
-            print(f"value is", value)
+            print("key is", key)
+            print("value is", value)
     return credentials
 
 
