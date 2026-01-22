@@ -35,5 +35,5 @@ print(len1)
 
 l2 = [5, 2, 4, 4, 1,1]
 len2=obj1.remove_element(l2)
-print(f"len2 is  {len2}")
+print("len2 is",  {len2})
 
