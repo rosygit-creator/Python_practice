@@ -7,7 +7,7 @@
 # print(f"The character for ASCII value {ascii_a} is: {char_a}")
 
 def board1(b):
-
+    input=[]
     output=""
     n = 65
     input=[0] * 27
@@ -15,6 +15,7 @@ def board1(b):
 
         input[i]=chr(n)
         n+=1
+    print(input)
 
     for c in b:
         index=int(c)
@@ -29,7 +30,7 @@ def board1(b):
     return output
 
 
-ans=board1("12")
+ans=board1("123")
 print(ans)
 ans=board1("111222")
 print(ans)

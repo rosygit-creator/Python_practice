@@ -9,8 +9,6 @@ def findTriplets(arr):
     arr.sort()
     n = len(arr)
 
-
-
     # Generating all triplets
     for i in range(n - 2):
         left, right = i + 1, n - 1

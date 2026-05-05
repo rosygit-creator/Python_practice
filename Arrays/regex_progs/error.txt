@@ -1,0 +1,21 @@
+ 
+
+2023-10-26 10:00:01 INFO Engine: Engine started successfully.
+
+2023-10-26 10:00:05 WARNING Brakes: Brake pad wear detected, recommend inspection.
+
+2023-10-26 10:00:10 INFO Infotainment: System booted.
+
+2023-10-26 10:00:15 ERROR Engine: High temperature alert! Temp=105C.
+
+2023-10-26 10:00:20 INFO Engine: Oil pressure nominal.
+
+2023-10-26 10:00:25 WARNING Brakes: ABS sensor anomaly detected.
+
+2023-10-26 10:00:30 ERROR Infotainment: Navigation module failure.
+
+2023-10-26 10:00:35 INFO Brakes: System check complete.
+
+2023-10-26 10:00:40 ERROR Engine: Engine stalled unexpectedly.
+
+2023-10-26 10:00:45 INFO Infotainment: User logged in.

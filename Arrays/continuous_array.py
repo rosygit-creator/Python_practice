@@ -6,28 +6,29 @@ def continuous_array(a):
     maxlen=0
 
     for i in range(0, len(a)):
-
+        # maxlen=0
         for j in range(i+1,len(a)):
             temp=a[i:j+1] # since j+1 it will print min list of length 2
             # print(temp)
             if temp.count(0)==temp.count(1):
                 # l=j-i+1
-                l.append([temp])
-                # maxlen=max(maxlen, len(l)) to find maxlength of such array
+                if len(temp) >maxlen:
+                    maxlen=len(temp)
+                    l.clear()
+                    l.append(temp)
+                # maxlen=max(maxlen, len(temp)) #to find maxlength of such array
+                # l.append([temp])
+                # maxlen=max(maxlen, len(l)) #to find maxlength of such array
                 # print("l is", l)
             # print(temp)
 
 
-
-
-
-
-    return maxlen
+    return l
 
 nums = [1, 0, 0, 1, 0, 1, 1]
 ans=continuous_array(nums)
 print("ans is ", ans)
-print(len(ans))
+# print(len(ans))
 
 
 
